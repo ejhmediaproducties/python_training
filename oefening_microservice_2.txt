@@ -1,0 +1,5 @@
+Schrijf een Python-script dat een Flask-applicatie definieert met drie routes:
+
+    Een route "/hello" die de tekst "Hello, World!" terugstuurt als HTTP-response bij het ontvangen van een GET-request.
+    Een route "/goodbye" die de tekst "Goodbye, World!" terugstuurt als HTTP-response bij het ontvangen van een GET-request.
+    Een route "/name/<name>" die een gepersonaliseerde begroeting terugstuurt als HTTP-response bij het ontvangen van een GET-request. De route moet een naamparameter accepteren die gebruikt wordt om de begroeting te personaliseren, bijvoorbeeld "Hallo, Ronald!".
