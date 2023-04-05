@@ -1,0 +1,1 @@
+Schrijf een Python-script dat een Flask-applicatie definieert met een route "/hello" die de tekst "Hello, World!" terugstuurt als HTTP-response bij het ontvangen van een GET-request.
