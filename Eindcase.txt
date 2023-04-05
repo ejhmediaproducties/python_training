@@ -1,0 +1,11 @@
+Opdracht: Bestandshandler-service
+Doel
+Bouw een microservice met Python die de gebruiker in staat stelt om bestanden te lezen, schrijven en verwijderen op hun computer.
+
+Taken
+
+  Bouw een HTTP-server in Python met behulp van een framework als Flask of Django.
+  Definieer drie API-endpoints voor de volgende taken: bestand lezen, bestand schrijven en bestand verwijderen. Elk van deze endpoints moet de bestandsnaam als parameter accepteren.
+  Implementeer de logica voor elk van de endpoints. Gebruik hiervoor de ingebouwde open()-functie in Python om het bestand te openen, te lezen of te schrijven en gebruik os.remove() om bestanden te verwijderen.
+  Voeg error-handling toe om fouten af te handelen die zich kunnen voordoen bij het lezen, schrijven of verwijderen van bestanden.
+  Test de microservice met behulp van een client zoals Postman of cURL om te verifiëren of de endpoints correct functioneren.
