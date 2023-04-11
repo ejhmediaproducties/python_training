@@ -1,0 +1,18 @@
+Dit script bevat drie verschillende functies die een bestand kunnen lezen, schrijven of verwijderen, afhankelijk van het type HTTP-verzoek dat wordt ontvangen. Het script is geschreven in Python met behulp van de Flask-webtoepassingsframework.
+
+Hieronder volgt een korte uitleg van elke functie:
+
+    read_file(): Deze functie ontvangt een GET-verzoek met een query parameter filename. De functie opent het opgegeven bestand en retourneert de inhoud ervan als een tekstreeks.
+
+    write_file(): Deze functie ontvangt een POST-verzoek met een query parameter filename en een veld data in de request body. De functie schrijft de inhoud van het veld data naar het opgegeven bestand.
+
+    delete_file(): Deze functie ontvangt een DELETE-verzoek met een query parameter filename. De functie verwijdert het opgegeven bestand van de schijf.
+
+
+Het script start de Flask-toepassing en draait op de localhost. Het kan worden uitgevoerd door het bestand op te slaan met de extensie .py en het te starten met het commando python <bestandsnaam>.py in de terminal.
+
+Eenmaal gestart, kunnen de drie functies worden aangeroepen via de endpoints /readfile, /writefile en /deletefile, waarbij de query parameter filename wordt gebruikt om het bestand te identificeren. De /writefile endpoint vereist ook een POST-request met het veld data in de request body om de inhoud van het bestand op te slaan.
+
+Bijvoorbeeld, om een bestand test.txt te lezen, kan je in de browser de URL invoeren http://localhost:5000/readfile?filename=test.txt en de inhoud van het bestand zal worden geretourneerd als tekst. Om een ​​bestand example.txt te verwijderen, kan je een DELETE-request uitvoeren naar de URL http://localhost:5000/deletefile?filename=example.txt.
+
+Let op: Dit script is slechts bedoeld voor educatieve doeleinden en moet niet worden gebruikt voor productiedoeleinden zonder passende beveiligingsmaatregelen. Het is belangrijk om te begrijpen dat dit script toegang geeft tot het bestandssysteem van de server en daarom potentiële beveiligingsrisico's met zich meebrengt als het niet goed wordt beveiligd.
